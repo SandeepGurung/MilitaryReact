@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    padding: 10px 0;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list .navbar-item{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar-list .navbar-item a{
+    display: inline-block;
+    background: transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-list .navbar-item a.active{
+    color: #CE2626;
+}
+
+/*Title Section*/
+.title-section{margin-bottom: 30px; display: block; text-align: center; }
+.title-section h5{font-size: 20px; font-family: 'Bricolage Grotesque', sans-serif; color: #CE2626; font-weight: 500; text-transform: uppercase;}
+.title-section h3{font-size: 40px; font-family: 'Bricolage Grotesque', sans-serif; color: #000; font-weight: 600; line-height: 55px;}
+.title-section p{font-size: 16px; color: #000; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 400; line-height: 30px;}
+.title-section p span{font-size: 24.01px; font-family: 'Bricolage Grotesque', sans-serif; color: #000;}
+
+/*More Button*/
+.more{display: block; text-align: center; margin-top:40px;}
+.more a{display:inline-block;  font-family: 'Bricolage Grotesque', sans-serif; color:#fff; padding:13px 30px; background:#CE2626; text-decoration: none; border-radius:5px; border:1px solid #fff; transition: all linear 0.3s;}
+.more a:hover{background:transparent; color:#fff;}
+
+.banner{
+    position: relative;
+}
+
+.banner .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #CE2626;
+    font-size: 40px;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.banner .owl-theme .owl-nav [class*='owl-']:hover{
+    border: 1px solid #CE2626;
+    background: #fff;
+    color: #CE2626;
+}
+
+.banner .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.banner .owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.banner .owl-theme .owl-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    transform: translate(-50%,50%);
+    z-index: 10;
+}
+
+.banner .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #CE2626;
+}
+
+.banner-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0, .4);
+    padding: 30px 40px;
+    text-align: center;
+    z-index: 10;
+}
+
+.banner-content h3{
+    font-size: 30px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner-content p{
+    font-size: 17px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.welcome-section{
+    padding: 70px 0;
+}
+
+.welcome-section .title-section,.welcome-section .title-section .more{
+    text-align: left;
+}
+
+.services-block{
+    
+}
+
+.services-block img{
+    width: 100%;
+    height: auto;
+}
+
+.testimonials-block{
+    padding: 60px 40px;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.footer{
+    text-align: center;
+}
